@@ -10,7 +10,7 @@ job ('Gradle Dsl Job'){
    steps{
    	gradle 'assemble'
    }
-   publisher{
+   publishers{
       archiveArtifacts {
             pattern('Gradle Dsl Job/build/libs/*.jar')
             onlyIfSuccessful(true)
