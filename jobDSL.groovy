@@ -8,9 +8,6 @@ job ('Gradle Dsl Job'){
       scm('H/15 * * * *')
     }
    steps{
-   shell{
-          ./gradlew clean
-		      ./gradlew assemble
-        }
+   	gradle 'assemble'
    }
 }
