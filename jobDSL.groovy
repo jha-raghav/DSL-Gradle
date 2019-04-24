@@ -12,7 +12,7 @@ job ('Gradle Dsl Job'){
    }
    publisher{
       archiveArtifacts {
-            pattern('Gradle Dsl Job\build\libs/*.jar')
+            pattern('Gradle Dsl Job/build/libs/*.jar')
             onlyIfSuccessful(true)
         }
    }
